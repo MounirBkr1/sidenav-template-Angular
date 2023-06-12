@@ -52,7 +52,7 @@ import {Router} from "@angular/router";
 
     </ul>
   `,
-  styleUrls: ['./sidenav.component.css'],
+  styleUrls: ['./sidenav.component.scss'],
   animations:[
     fadeInOut,
     trigger('submenu',[

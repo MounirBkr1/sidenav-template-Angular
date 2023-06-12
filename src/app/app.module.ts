@@ -13,6 +13,10 @@ import { SettingsComponent } from './settings/settings.component';
 import {CommonModule} from "@angular/common";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
+import { HeaderComponent } from './header/header.component';
+
+import {OverlayModule} from "@angular/cdk/overlay";
+import {CdkMenuModule} from "@angular/cdk/menu";
 
 
 
@@ -26,13 +30,18 @@ import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
     PagesComponent,
     MediaComponent,
     SettingsComponent,
-    SublevelMenuComponent
+    SublevelMenuComponent,
+    HeaderComponent
   ],
   imports: [
-    CommonModule,
+    // CommonModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    OverlayModule,
+    CdkMenuModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

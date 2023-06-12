@@ -3,7 +3,7 @@ import {Component, Input, OnInit} from '@angular/core';
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css']
+  styleUrls: ['./body.component.scss']
 })
 export class BodyComponent implements OnInit {
 
@@ -14,6 +14,7 @@ export class BodyComponent implements OnInit {
 
   @Input() collapsed=false;
   @Input() screenWidth=0;
+
 
   getBodyClass():string {
     let styleClass='';
