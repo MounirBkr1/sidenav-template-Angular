@@ -25,3 +25,44 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# MySkeletonWebSite-sidnav-top
+with angular+ css +html+ js
+
+
+# To generate components :
+ng g c body --skip-tests true
+
+ng g c sidenav --skip-tests true
+
+ng g c dashboard --skip-tests true
+
+ng g c products --skip-tests true
+
+ng g c statistics --skip-tests true
+
+ng g c coupens --skip-tests true
+
+ng g c pages --skip-tests true
+
+ng g c media --skip-tests true
+
+ng g c settings --skip-tests true
+
+# To generate modules:
+ng g m coupens --routing --flat true
+
+ng g m products --routing --flat true
+
+# To generate components :
+ng g c sublevel-menu --inline-template --inline-style --flat true
+
+ng g c coupen-list --module coupens
+
+ng g c product-level-three-one --module products
+
+ng g c product-level-three-two --module products
+
+# index.html
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
