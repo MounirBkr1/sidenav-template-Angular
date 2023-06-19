@@ -1,4 +1,4 @@
-export const Language=[
+export const languages=[
   {
     language: 'English',
     flag:'us'

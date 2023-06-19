@@ -14,9 +14,10 @@ import {CommonModule} from "@angular/common";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
 import { HeaderComponent } from './header/header.component';
-//
-// import {OverlayModule} from "@angular/cdk/overlay";
-// import {CdkMenuModule} from "@angular/cdk/menu";
+
+import {OverlayModule} from "@angular/cdk/overlay";
+import {CdkMenuModule} from "@angular/cdk/menu";
+import {MatMenuModule} from "@angular/material/menu";
 
 
 
@@ -38,8 +39,9 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // OverlayModule,
-    // CdkMenuModule
+    OverlayModule,
+    CdkMenuModule,
+    MatMenuModule
 
 
   ],
