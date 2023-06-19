@@ -1,6 +1,27 @@
 # MyTemplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Angular CLI: 16.1.0
+Node: 18.16.0
+Package Manager: npm 9.5.1
+OS: win32 x64
+
+Angular: 16.1.1
+... animations, cdk, common, compiler, compiler-cli, core, forms
+... material, platform-browser, platform-browser-dynamic, router
+
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1601.0
+@angular-devkit/build-angular   16.1.0
+@angular-devkit/core            16.1.0
+@angular-devkit/schematics      16.1.0
+@angular/cli                    16.1.0
+@schematics/angular             16.1.0
+rxjs                            7.5.7
+typescript                      4.9.5
+
+
 
 ## Development server
 
