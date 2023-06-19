@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   @Input() collapsed = false;
   @Input() screenWidth=0;
 
+  canShowSearchAsOverlay=false;
+
   selectedLanguage:any;
 
   languages=languages;
@@ -20,8 +22,13 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  @HostListener('window:resize',['$event'])
+  onResize(event:any){
+    this.checkCanShowSearchAsOverlay(window.innerWidth);
+  }
 
+  ngOnInit(): void {
+    this.checkCanShowSearchAsOverlay(window.innerWidth);
     this.selectedLanguage=this.languages[0];
   }
 
@@ -35,5 +42,12 @@ export class HeaderComponent implements OnInit {
     return styleClass;
   }
 
-
+  //for search button
+  private checkCanShowSearchAsOverlay(innerWidth: number):void {
+    if (innerWidth<845){
+      this.canShowSearchAsOverlay=true;
+    }else{
+      this.canShowSearchAsOverlay=false;
+    }
+  }
 }
