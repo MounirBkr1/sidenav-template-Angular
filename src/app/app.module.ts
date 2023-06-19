@@ -17,7 +17,7 @@ import { HeaderComponent } from './header/header.component';
 
 import {OverlayModule} from "@angular/cdk/overlay";
 import {CdkMenuModule} from "@angular/cdk/menu";
-import {MatMenuModule} from "@angular/material/menu";
+
 
 
 
@@ -40,8 +40,8 @@ import {MatMenuModule} from "@angular/material/menu";
     AppRoutingModule,
     BrowserAnimationsModule,
     OverlayModule,
-    CdkMenuModule,
-    MatMenuModule
+    CdkMenuModule
+
 
 
   ],
